@@ -1,0 +1,28 @@
+
+.flexbox-container {
+    width: 500 px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left;
+}
+
+.flexbox-items {
+    width: 400px;
+    margin: 20px;
+}
+
+.flexbox-item-1 {
+    min-height: 40px;
+}
+
+.flexbox-item-2 {
+    min-height: 40px;
+}
+
+.flexbox-item-3 {
+    min-height: 30px;
+    width: 100px;
+    align-items: center;
+}

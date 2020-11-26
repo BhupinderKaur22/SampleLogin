@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Sign In</h2>
+    <p *ngIf="errorMessage$ | async as errorMessage">{{errorMessage}}</p>
+    <div class="container">
+        <form [formGroup]="signInForm" class="flexbox-container">
+            <input 
+                class="flexbox-items flexbox-item-1"
+                type="text" 
+                name="username" 
+                formControlName="username">
+            <input 
+                class="flexbox-items flexbox-item-2"
+                type="password" 
+                name="password" 
+                formControlName="password">
+            <button 
+                class="flexbox-items flexbox-item-3"
+                type="submit" 
+                (click)="onSignIn()">
+                Sign In
+            </button>
+        </form>
+</div>
+
